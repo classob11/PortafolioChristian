@@ -13,19 +13,3 @@ function typeEffect(element, speed) {
   }, speed);
 }
 
-
-// application
-var speed = 75;
-var h1 = document.querySelector('h1');
-var p = document.querySelector('p');
-var delay = h1.innerHTML.length * speed + speed;
-
-// type affect to header
-typeEffect(h1, speed);
-
-
-// type affect to body
-setTimeout(function(){
-  p.style.display = "inline-block";
-  typeEffect(p, speed);
-}, delay);
