@@ -1,5 +1,5 @@
 :root{
-    --padding-container: 100px 0;
+    --padding-container: 50px 0;
     --color-title: #001A49;
 }
 
@@ -9,7 +9,7 @@ body{
 
 .container{
     width: 90%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
@@ -22,7 +22,6 @@ body{
     max-height: 800px;
     position: relative;
     display: grid;
-    grid-template-rows: 100px 1fr;
     color: white;
 }
 
@@ -40,11 +39,11 @@ body{
 }
 
 .img-cl{
-    width: 325px;
-    height: 325px;
+    width: 350px;
+    height: 370px;
     border-radius: 50%;
     object-fit: cover;
-    object-position:50% 30%;
+    object-position:50% 50%;
 }
 
 
@@ -67,6 +66,7 @@ body{
     grid-auto-flow: column;
     grid-auto-columns: max-content;
     gap: 2em;
+    
 }
 .nav-items{
     list-style: none;
@@ -147,16 +147,26 @@ body{
 }
 
 .about-icons{
+    width: 100%;
+    border: none;
+    display: block;
+    margin-top: 5px;
+    appearance: none;
+    border-radius: 8px;
+    cursor: pointer;
+    backdrop-filter: blur(23px);
+    padding: 12px 20px;
+    background: linear-gradient(90deg, rgba(33, 37, 41, 0.6) 0%, rgba(33, 37, 41, 0.24) 100%);
+    outline: none;
     display: grid;
     gap:1em ;
     justify-items: center;
-    width: 260px;
     overflow: hidden;
     margin:0 auto;
 }
 
 .about-icon{
-    width: 40px;
+    width: 60px;
 }
 
 /* knowledge */
